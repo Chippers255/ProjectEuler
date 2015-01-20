@@ -10,7 +10,7 @@ module Main where
 nsum = sum $ multiples n
     where n = 999
     
-multiples n = filter (\x -> x `mod` 5 == 0 || x `mod` 3 == 0) [1..999]
+multiples n = filter (\x -> mod x 5 == 0 || mod x 3 == 0) [1..999]
 
 main = do
     putStrLn "All multiples of 3 and 5 under 1000..."
